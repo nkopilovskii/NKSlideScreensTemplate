@@ -1,0 +1,16 @@
+PODS:
+  - NKSlideScreensTemplate (0.1.0)
+
+DEPENDENCIES:
+  - NKSlideScreensTemplate (from `../`)
+
+EXTERNAL SOURCES:
+  NKSlideScreensTemplate:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NKSlideScreensTemplate: 1d7f456399473fe26da14e9bf60cf32ca47509bb
+
+PODFILE CHECKSUM: 8154bc0b68561b647302e9aaf0cb7f8dc9c85855
+
+COCOAPODS: 1.7.3
