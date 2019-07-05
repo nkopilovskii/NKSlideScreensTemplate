@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NKSlideScreensTemplate_Example' do
+  pod 'NKSlideScreensTemplate', :path => '../'
+
+  target 'NKSlideScreensTemplate_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
