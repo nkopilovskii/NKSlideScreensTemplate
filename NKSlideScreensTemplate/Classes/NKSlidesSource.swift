@@ -10,17 +10,9 @@ import UIKit
 public protocol NKSlidesSource {
   var viewer: NKSlideScreenViewable? { get }
   
-  var transitionStyle: UIPageViewController.TransitionStyle { get }
-  var navigationOrientation: UIPageViewController.NavigationOrientation { get }
-  var spineLocation: UIPageViewController.SpineLocation { get }
-  
   var initialPage: UIViewController { get }
   
-  var pageTitleList: [String]? { get }
-  
-  func didSelectPage(at index: Int)
   func didPresent(_ page: UIViewController?)
-  func page(at index: Int) -> UIViewController?
   func page(after viewController: UIViewController) -> UIViewController?
   func page(before viewController: UIViewController) -> UIViewController?
 

@@ -7,27 +7,34 @@
 
 import UIKit
 
-public protocol NKSlideScreenDisplay where Self : UIViewController {
-  var container: UIView { get }
-  var pageViewController: UIPageViewController { get set }
-  func configuratePageViewController()
-}
 
-open class NKSlidesViewController: UIViewController, NKSlideScreenDisplay, UIPageViewControllerDelegate, UIPageViewControllerDataSource  {
+open class NKSlidesViewController: UIViewController, NKSlideScreenDisplay, NKSlideScreenViewable, UIPageViewControllerDelegate, UIPageViewControllerDataSource  {
   
-  open var container: UIView { return view }
-  open var pageViewController: UIPageViewController = UIPageViewController()
-  
+  //MARK: NKSlideScreenViewable properties implementation
   open var source: NKSlidesSource? { return nil }
  
   open var contentPageViewController: UIPageViewController?
   
+  //MARK: NKSlideScreenDisplay properties implementation
+  open var container: UIView { return view }
   
+  public var pageViewController: UIPageViewController = UIPageViewController()
+  
+  open var transitionStyle: UIPageViewController.TransitionStyle {
+    return .scroll
+  }
+  
+  open var navigationOrientation: UIPageViewController.NavigationOrientation {
+    return .horizontal
+  }
+  
+  //MARK: Base method implementation
   override open func viewDidLoad() {
     super.viewDidLoad()
     configuratePageViewController()
   }
   
+  //MARK: NKSlideScreenDisplay method implementation
   open func configuratePageViewController() {
     guard let source = source else { return }
     pageViewController = UIPageViewController(transitionStyle: source.transitionStyle, navigationOrientation: source.navigationOrientation, options: nil)
@@ -46,6 +53,7 @@ open class NKSlidesViewController: UIViewController, NKSlideScreenDisplay, UIPag
     pageViewController.view.rightAnchor.constraint(equalTo: container.rightAnchor, constant: 0).isActive = true
   }
   
+  //MARK: UIPageViewControllerDelegate, UIPageViewControllerDataSource implementation
   open func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
     return source?.page(before: viewController)
   }
@@ -58,5 +66,5 @@ open class NKSlidesViewController: UIViewController, NKSlideScreenDisplay, UIPag
     guard completed else { return }
     source?.didPresent(pageViewController.viewControllers?.first)
   }
-
+  
 }
