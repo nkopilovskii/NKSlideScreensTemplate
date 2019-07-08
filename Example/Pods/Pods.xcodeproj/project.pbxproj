@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		0206095ABDC323908BC1993D2383C792 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		3208C3E1444D2C7436628F35B1B815F7 /* Pods-NKSlideScreensTemplate_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CCAC2C0DBF2EF29E60E1FC2F0677F77 /* Pods-NKSlideScreensTemplate_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3902D70022D08A5E008E634E /* NKSlidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3902D6FF22D08A5E008E634E /* NKSlidesViewController.swift */; };
+		3902D70222D08FF8008E634E /* NKSlidesSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3902D70122D08FF8008E634E /* NKSlidesSource.swift */; };
+		3902D70422D092F3008E634E /* NKSlideScreenViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3902D70322D092F3008E634E /* NKSlideScreenViewable.swift */; };
 		3C5D9287D0B4692280426472F9C25F22 /* Pods-NKSlideScreensTemplate_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0EA11E7D4BDEA990182DDEF5CCCF4F /* Pods-NKSlideScreensTemplate_Tests-dummy.m */; };
 		44C0326CA4B9EF825C2933D5ECC51F44 /* NKSlideScreensTemplate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC7E6C60FD016A2FF08DDB23AA71A25F /* NKSlideScreensTemplate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5BAAA612DA8BD1D43E849E59CA269BE7 /* Pods-NKSlideScreensTemplate_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 486804A670ED64ACBC7D5396E4899A35 /* Pods-NKSlideScreensTemplate_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61B41DB176F0EEBD4702C352256E445B /* NKSlideScreensTemplate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E61AFC92E3F4406AA84DEA1ED1775C /* NKSlideScreensTemplate-dummy.m */; };
-		B43CFC7AE051063E5BF6C6AE0BC621F5 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BE737D11B43B04244854C33EE87D01 /* ReplaceMe.swift */; };
 		D5940D9F3E9477D7222B91539123AA38 /* Pods-NKSlideScreensTemplate_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EF0CF2C4275783616CFAC3A6E14129 /* Pods-NKSlideScreensTemplate_Example-dummy.m */; };
 		E661951F82765720F976ADC1B3C8D400 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		F6D0A5BD2B3F298F204FAFBB45453931 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -37,14 +39,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		071973D7F6B58862B12DA1230178DA96 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		23E2A2154F8239865E99DF7C62EBF125 /* NKSlideScreensTemplate.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = NKSlideScreensTemplate.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		071973D7F6B58862B12DA1230178DA96 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		23E2A2154F8239865E99DF7C62EBF125 /* NKSlideScreensTemplate.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = NKSlideScreensTemplate.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		25E0F8766992C95BC52619E6F24B9D8C /* NKSlideScreensTemplate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NKSlideScreensTemplate.xcconfig; sourceTree = "<group>"; };
-		2A310FE97AE47F7408C7C4FA5898A661 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		2A310FE97AE47F7408C7C4FA5898A661 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3902D6FF22D08A5E008E634E /* NKSlidesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NKSlidesViewController.swift; path = NKSlideScreensTemplate/Classes/NKSlidesViewController.swift; sourceTree = "<group>"; };
+		3902D70122D08FF8008E634E /* NKSlidesSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NKSlidesSource.swift; path = NKSlideScreensTemplate/Classes/NKSlidesSource.swift; sourceTree = "<group>"; };
+		3902D70322D092F3008E634E /* NKSlideScreenViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKSlideScreenViewable.swift; sourceTree = "<group>"; };
 		395AB258B8D5AFAEA00FCD9A95BBA527 /* Pods-NKSlideScreensTemplate_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NKSlideScreensTemplate_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3CB85E2BBD4D70E1606E1F1C27B54B8C /* Pods-NKSlideScreensTemplate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NKSlideScreensTemplate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3DB9ECDEE5C32A2708963D83C991B1F5 /* NKSlideScreensTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NKSlideScreensTemplate.framework; path = NKSlideScreensTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB9ECDEE5C32A2708963D83C991B1F5 /* NKSlideScreensTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NKSlideScreensTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		486804A670ED64ACBC7D5396E4899A35 /* Pods-NKSlideScreensTemplate_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NKSlideScreensTemplate_Tests-umbrella.h"; sourceTree = "<group>"; };
 		4EF20598FD80ABCC21C7D89E4A58B594 /* Pods-NKSlideScreensTemplate_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NKSlideScreensTemplate_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		58371B3F875A734C448BE4D871CB8936 /* Pods-NKSlideScreensTemplate_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NKSlideScreensTemplate_Tests.modulemap"; sourceTree = "<group>"; };
@@ -56,19 +61,18 @@
 		8F404081358FA174AB05603C718662F5 /* Pods-NKSlideScreensTemplate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NKSlideScreensTemplate_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9AE6D35D81C95885756850F077931C37 /* Pods-NKSlideScreensTemplate_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NKSlideScreensTemplate_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9C94F566EEBC5B29BC8146B2FAA93B20 /* Pods-NKSlideScreensTemplate_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NKSlideScreensTemplate_Tests-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A602B80FFC9A5B2FC4D3EE0C84A5593E /* Pods-NKSlideScreensTemplate_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NKSlideScreensTemplate_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A627D59C6943DE999FAED4F2D5433257 /* NKSlideScreensTemplate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKSlideScreensTemplate-prefix.pch"; sourceTree = "<group>"; };
 		AEDC078EE42DC8B5025232F0735D6F19 /* NKSlideScreensTemplate-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NKSlideScreensTemplate-Info.plist"; sourceTree = "<group>"; };
 		B9EF0CF2C4275783616CFAC3A6E14129 /* Pods-NKSlideScreensTemplate_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NKSlideScreensTemplate_Example-dummy.m"; sourceTree = "<group>"; };
 		BC28F2D7D143BF00A526692A2A86FB73 /* Pods-NKSlideScreensTemplate_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NKSlideScreensTemplate_Example.modulemap"; sourceTree = "<group>"; };
-		C6BE737D11B43B04244854C33EE87D01 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = NKSlideScreensTemplate/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		CEB85FFBF879EEB1BD9B715335EE4913 /* NKSlideScreensTemplate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NKSlideScreensTemplate.modulemap; sourceTree = "<group>"; };
 		DC7E6C60FD016A2FF08DDB23AA71A25F /* NKSlideScreensTemplate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKSlideScreensTemplate-umbrella.h"; sourceTree = "<group>"; };
 		EF5CA70B3C5C23547712D47B0941F705 /* Pods-NKSlideScreensTemplate_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NKSlideScreensTemplate_Example-Info.plist"; sourceTree = "<group>"; };
 		F178674494048B583564EAA5CAF62AFC /* Pods-NKSlideScreensTemplate_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NKSlideScreensTemplate_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F2CDE5A149628BA9DD8743A6D6090711 /* Pods_NKSlideScreensTemplate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NKSlideScreensTemplate_Tests.framework; path = "Pods-NKSlideScreensTemplate_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F387E2DDC4B8D415810808283FBF64CF /* Pods_NKSlideScreensTemplate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NKSlideScreensTemplate_Example.framework; path = "Pods-NKSlideScreensTemplate_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2CDE5A149628BA9DD8743A6D6090711 /* Pods_NKSlideScreensTemplate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NKSlideScreensTemplate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F387E2DDC4B8D415810808283FBF64CF /* Pods_NKSlideScreensTemplate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NKSlideScreensTemplate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +136,9 @@
 		2378E2F6AA4D2172479B51C12584C8DC /* NKSlideScreensTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				C6BE737D11B43B04244854C33EE87D01 /* ReplaceMe.swift */,
+				3902D70322D092F3008E634E /* NKSlideScreenViewable.swift */,
+				3902D70122D08FF8008E634E /* NKSlidesSource.swift */,
+				3902D6FF22D08A5E008E634E /* NKSlidesViewController.swift */,
 				FB9C48FE0525EE74FD6976AEFBFBBA4D /* Pod */,
 				041A3B71F5BFD137EF0398E7C40D7E0D /* Support Files */,
 			);
@@ -365,7 +371,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				61B41DB176F0EEBD4702C352256E445B /* NKSlideScreensTemplate-dummy.m in Sources */,
-				B43CFC7AE051063E5BF6C6AE0BC621F5 /* ReplaceMe.swift in Sources */,
+				3902D70222D08FF8008E634E /* NKSlidesSource.swift in Sources */,
+				3902D70022D08A5E008E634E /* NKSlidesViewController.swift in Sources */,
+				3902D70422D092F3008E634E /* NKSlideScreenViewable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,7 +527,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NKSlideScreensTemplate/NKSlideScreensTemplate-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NKSlideScreensTemplate/NKSlideScreensTemplate-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NKSlideScreensTemplate/NKSlideScreensTemplate.modulemap";
 				PRODUCT_MODULE_NAME = NKSlideScreensTemplate;
@@ -527,7 +535,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -587,8 +595,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -708,7 +715,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NKSlideScreensTemplate/NKSlideScreensTemplate-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NKSlideScreensTemplate/NKSlideScreensTemplate-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NKSlideScreensTemplate/NKSlideScreensTemplate.modulemap";
 				PRODUCT_MODULE_NAME = NKSlideScreensTemplate;
@@ -716,7 +723,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";

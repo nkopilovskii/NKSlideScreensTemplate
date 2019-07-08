@@ -29,8 +29,8 @@
 
 /* Begin PBXFileReference section */
 		1F52F06E09153F5F0AE2CDFF /* Pods-NKSlideScreensTemplate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKSlideScreensTemplate_Tests.debug.xcconfig"; path = "Target Support Files/Pods-NKSlideScreensTemplate_Tests/Pods-NKSlideScreensTemplate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		32F7F517CA2AE3CB40354D63 /* NKSlideScreensTemplate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = NKSlideScreensTemplate.podspec; path = ../NKSlideScreensTemplate.podspec; sourceTree = "<group>"; };
-		565C7C4DF0E9924BC0EA40C7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		32F7F517CA2AE3CB40354D63 /* NKSlideScreensTemplate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NKSlideScreensTemplate.podspec; path = ../NKSlideScreensTemplate.podspec; sourceTree = "<group>"; };
+		565C7C4DF0E9924BC0EA40C7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5823B5346C069A90F71E319D /* Pods_NKSlideScreensTemplate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NKSlideScreensTemplate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* NKSlideScreensTemplate_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NKSlideScreensTemplate_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		6877404151AC7DD3919C1176 /* Pods-NKSlideScreensTemplate_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKSlideScreensTemplate_Example.release.xcconfig"; path = "Target Support Files/Pods-NKSlideScreensTemplate_Example/Pods-NKSlideScreensTemplate_Example.release.xcconfig"; sourceTree = "<group>"; };
 		68AEFB5343A0EA9891C908BB /* Pods-NKSlideScreensTemplate_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKSlideScreensTemplate_Tests.release.xcconfig"; path = "Target Support Files/Pods-NKSlideScreensTemplate_Tests/Pods-NKSlideScreensTemplate_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		76C4579571B2475C09A79C99 /* Pods_NKSlideScreensTemplate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NKSlideScreensTemplate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		79BADC23B48136BB1FD64CC8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		79BADC23B48136BB1FD64CC8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DCF6290C5388D9B1A46B20EE /* Pods-NKSlideScreensTemplate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKSlideScreensTemplate_Example.debug.xcconfig"; path = "Target Support Files/Pods-NKSlideScreensTemplate_Example/Pods-NKSlideScreensTemplate_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +77,6 @@
 				1F52F06E09153F5F0AE2CDFF /* Pods-NKSlideScreensTemplate_Tests.debug.xcconfig */,
 				68AEFB5343A0EA9891C908BB /* Pods-NKSlideScreensTemplate_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -479,12 +479,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NKSlideScreensTemplate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -494,12 +495,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NKSlideScreensTemplate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
