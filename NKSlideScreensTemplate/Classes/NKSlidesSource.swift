@@ -40,22 +40,3 @@ public protocol NKSlidesSource {
 
 }
 //MARK: -
-
-//MARK: - NKSlidesSource protocol implementation
-//FIXME
-//public extension NKSlidesSource {
-//  
-//  var transitionStyle: UIPageViewController.TransitionStyle {
-//    return .scroll
-//  }
-//  
-//  var navigationOrientation: UIPageViewController.NavigationOrientation {
-//    return .horizontal
-//  }
-//  
-//  var spineLocation: UIPageViewController.SpineLocation {
-//    return .none
-//  }
-//  
-//}
-//MARK: -

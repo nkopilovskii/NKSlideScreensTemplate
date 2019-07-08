@@ -42,3 +42,4 @@ public protocol NKSlideScreenDisplay where Self : UIViewController {
   func configuratePageViewController()
   
 }
+//MARK: -

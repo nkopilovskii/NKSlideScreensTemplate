@@ -60,7 +60,7 @@ open class NKSlidesViewController: UIViewController, NKSlideScreenDisplay, NKSli
   //MARK: NKSlideScreenDisplay method implementation
   open func configuratePageViewController() {
     guard let source = source else { return }
-    pageViewController = UIPageViewController(transitionStyle: source.transitionStyle, navigationOrientation: source.navigationOrientation, options: nil)
+    pageViewController = UIPageViewController(transitionStyle: transitionStyle, navigationOrientation: navigationOrientation, options: nil)
     pageViewController.setViewControllers([source.initialPage], direction: .forward, animated: false)
     pageViewController.delegate = self
     pageViewController.dataSource = self

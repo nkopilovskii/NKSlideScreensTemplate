@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.summary          = 'Tool for quick and compact UIPageViewController configuration.'
 
   s.description      = <<-DESC
-  The solution is a template with the implementation of the basic methods of configuration and  management of UIPageViewController.
+  The solution is a template with the implementation of the basic methods of configuration and management of UIPageViewController.
   
   The solution is designed for multi-level architectures, as it allows to distribute the code into the corresponding layers of the module.
                        DESC
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'nkopilovskii' => 'nkopilovskii@gmail.com' }
   s.source           = { :git => 'https://github.com/nkopilovskii/NKSlideScreensTemplate.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/mkopilovskii'
+  s.social_media_url = 'https://twitter.com/mkopilovskii'
 
   s.ios.deployment_target = '10.0'
   s.swift_version = '5.0'
