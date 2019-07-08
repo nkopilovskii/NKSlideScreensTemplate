@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		1F52F06E09153F5F0AE2CDFF /* Pods-NKSlideScreensTemplate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKSlideScreensTemplate_Tests.debug.xcconfig"; path = "Target Support Files/Pods-NKSlideScreensTemplate_Tests/Pods-NKSlideScreensTemplate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		32F7F517CA2AE3CB40354D63 /* NKSlideScreensTemplate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NKSlideScreensTemplate.podspec; path = ../NKSlideScreensTemplate.podspec; sourceTree = "<group>"; };
+		32F7F517CA2AE3CB40354D63 /* NKSlideScreensTemplate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NKSlideScreensTemplate.podspec; path = ../NKSlideScreensTemplate.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		565C7C4DF0E9924BC0EA40C7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5823B5346C069A90F71E319D /* Pods_NKSlideScreensTemplate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NKSlideScreensTemplate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* NKSlideScreensTemplate_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NKSlideScreensTemplate_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
