@@ -11,7 +11,7 @@ public protocol NKSlideScreenViewable: class {
   
   var source: NKSlidesSource? { get }
   
-  var contentPageViewController: UIPageViewController? { get }
+  var contentPageViewController: UIPageViewController { get }
   
   var currentPage: UIViewController? { get }
   
@@ -23,11 +23,11 @@ public protocol NKSlideScreenViewable: class {
 public extension NKSlideScreenViewable {
   
   var currentPage: UIViewController? {
-    return contentPageViewController?.viewControllers?.first
+    return contentPageViewController.viewControllers?.first
   }
 
   func present(_ page: UIViewController, with direction: UIPageViewController.NavigationDirection) {
-    contentPageViewController?.setViewControllers([page], direction: direction, animated: true, completion: { [weak self] _ in
+    contentPageViewController.setViewControllers([page], direction: direction, animated: true, completion: { [weak self] _ in
       self?.source?.didPresent(page)
     })
   }

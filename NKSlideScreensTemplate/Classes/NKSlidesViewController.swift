@@ -13,7 +13,9 @@ open class NKSlidesViewController: UIViewController, NKSlideScreenDisplay, NKSli
   //MARK: NKSlideScreenViewable properties implementation
   open var source: NKSlidesSource? { return nil }
  
-  open var contentPageViewController: UIPageViewController?
+  open var contentPageViewController: UIPageViewController {
+    return pageViewController
+  }
   
   //MARK: NKSlideScreenDisplay properties implementation
   open var container: UIView { return view }
